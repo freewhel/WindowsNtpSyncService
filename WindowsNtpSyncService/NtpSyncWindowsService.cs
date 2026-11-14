@@ -73,7 +73,7 @@ namespace WindowsNtpSyncService
                     await Task.Delay(_reconnectInterval, stoppingToken);
                     continue;
                 }
-                SimpleLogger.Warn("网络连接成功...");
+                SimpleLogger.Info("网络连接成功...");
 
                 bool isPingSuccess = WaitConnect((count) =>
                 {
